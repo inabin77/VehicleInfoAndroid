@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="VehicleInfo"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make:  " />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year:  " />
+
+        <EditText
+            android:id="@+id/etYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color:  " />
+
+        <EditText
+            android:id="@+id/etColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase:  " />
+
+        <EditText
+            android:id="@+id/etPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engin Size:  " />
+
+
+        <EditText
+            android:id="@+id/etEngin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Create Car"
+                android:textSize="20sp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="#FF5722"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRes"
+                    style="@style/AppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
